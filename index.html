@@ -9,40 +9,60 @@
 <body>
     <header>
         <h1>Daniel Polk's Portfolio</h1>
-        <nav>
-            <h2>About Me</h2>
-            <h2>HoriSEON</h2>
-            <h2>The Manhatten Project</h2>
-            <h2>A Spaceship</h2>
-            <h2>The 70's</h2>
-        </nav>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#me">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>    
     </header>
+
+    <aside>
+        <h2 id="me">About Me</h2>
+        <p>
+            I began my development path when I met with 2 developer friends of mine at a convention,
+            and they encouraged me to pursue a career in this field. They told me i had an apptitude for it, and so here I am.
+            I grew up in Florida, but enjoyed my summers at my grandparents farm in my home state of Connecticut.
+        </p>
+    </aside>
 
     <main>
 
         <h2 id="projects">Projects</h2>
+        <div id="projectContainer">
+            <div id="firstProjects">
+                <section id="seo">
+                    <h3 class="projectTitle">HoriSEOn</h3>
+                    <a  href="https://dpolk98.github.io/01-Challenge/"><img src="Assets/digital-marketing-meeting.jpg" alt="HoriSEOn site hero image" class="hero"></a>
+                </section>
 
-        <section>
-            <h3 id="SEO">HoriSEOn</h3>
-        </section>
+                <section id="manhatten">
+                    <h3 class="projectTitle">The Manhatten Project</h3>
+                    <a><img src="Assets/Trinity.jpg" alt="Image of the trinity test nuclear bomb detonation" class="projectImg"></a>
+                </section>
+            </div>    
+            <div id="secondProjects">
+                <section id="spaceship">
+                    <h3 class="projectTitle">A literal spaceship</h3>
+                    <a><img src="Assets/ship.jpeg" alt="Image of the Apollo 5 rocket launch" class="projectImg"></a>
+                </section>
 
-        <section>
-            <h3 id="">The Manhatten Project</h3>
-        </section>
-
-        <section>
-            <h3>A literal spaceship</h3>
-        </section>
-
-        <section>
-            <h3>The 70's</h3>
-        </section>
-
+                <section id="retro">
+                    <h3 class="projectTitle">The 70's</h3>
+                    <a><img src="Assets/1970.jpg"  alt="the 70's baby" class="projectImg"></a>
+                </section>
+            </div>
+        </div>
     </main>
 
     <aside></aside>
 
-    <footer></footer>
+    <footer id="contact">
+        <ul>
+            <li><a href = "https://github.com/Dpolk98">Connect with me on Github!</a></li>
+        </ul>
+    </footer>
     
 
 </body>
