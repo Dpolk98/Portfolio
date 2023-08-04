@@ -5,18 +5,26 @@
     box-sizing: border-box;
 }
 
-.navbar {
+#navbar {
     display: flex;
-    padding: 0.5rem;
-    margin: 1rem;
+    justify-content:space-around;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
 }
 
 header, a, li {
     display: inline;
-    text-align: center;
     padding-left: 0.5rem;
     width: 100%;
     max-height: 50%;
+}
+
+ul {
+    display: inline;
+    align-content: center;
 }
 
 p {
@@ -28,6 +36,11 @@ h2 {
     padding-left: 1%;
     background-color: burlywood;
     padding-top: 1%;
+}
+
+#contact {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 #projectContainer {
@@ -70,3 +83,14 @@ h2 {
     flex-direction: column;
     max-height: auto;
 }
+
+@media only screen and (max-width: 736px) {
+    #projectContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .projectImg, #firstProjects, #secondProjects {
+        max-width: 100%;
+    }
+  }
